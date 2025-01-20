@@ -1,0 +1,4 @@
+aiogram==3.*
+python-dotenv
+aiohttp
+requests==2.32.3
