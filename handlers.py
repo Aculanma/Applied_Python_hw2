@@ -5,8 +5,6 @@ from aiogram.fsm.context import FSMContext
 from states import Form
 from states import FoodLog
 import requests
-#from config import NUTRITION_ID
-#from config import NUTRITION_TOKEN
 
 
 router = Router()
