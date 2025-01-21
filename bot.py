@@ -2,13 +2,13 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from handlers import router
 from config import TOKEN
-#from middlewares import LoggingMiddleware
+from middlewares import LoggingMiddleware
 
 # Создаем экземпляры бота и диспетчера
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 dp.include_router(router)
-#dp.message.middleware(LoggingMiddleware())
+dp.message.middleware(LoggingMiddleware())
 
 async def main():
     print("Бот запущен!")
